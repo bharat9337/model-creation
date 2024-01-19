@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <center>
+        <h1> display_Capital </h1>
+        <table border="3px">
+            <tr>
+               <th>Capital_name</th>
+               <th>Cno</th>
+               <th>Population</th>
+               <th>Sname</th>
+            </tr>
+
+        {% for co in Capital %}
+        <tr>
+            <td>{{ co.Capital_name}}</td>
+            <td>{{ co.Cno}}</td>
+            <td>{{ co.Population}}</td>
+            <td>{{ co.Sname}}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    </center>
+    
+</body>
+</html>

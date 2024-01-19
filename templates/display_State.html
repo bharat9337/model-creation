@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> display_state </h1>
+        <table border="3px">
+            <tr>
+               <th>state_name</th>
+               <th>Sno</th>
+               <th>Capital</th>
+            </tr>
+
+        {% for so in State %}
+        <tr>
+            <td>{{ so.State_name}}</td>
+            <td>{{ so.Sno}}</td>
+            <td>{{ so.Capital}}</td>
+        </tr>
+        {% endfor %}
+        </table>
+    </center>
+</body>
+</html>
